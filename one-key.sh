@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-#dir_shell=/ql/config
-dir_shell=/Users/liuqi/Downloads/temp
+dir_shell=/ql/config
 code_shell_path=$dir_shell/code.sh
 task_before_shell_path=$dir_shell/task_before.sh
 
