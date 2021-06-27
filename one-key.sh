@@ -6,10 +6,14 @@ code_shell_path=$dir_script/code.sh
 task_before_shell_path=$dir_shell/task_before.sh
 
 # 下载code.sh
+if [ ! -a "$code_shell_path" ]; then
+    touch $code_shell_path
+fi
 curl -s --connect-timeout 3 https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/code.sh > $code_shell_path
 
 # 判断是否下载成功
-if [ ! -a "$code_shell_path" ]; then
+code_size=$(ls -l $code_shell_path | awk '{print $5}')
+if (( $(echo "${code_size} < 100" | bc -l) )); then
     echo "code.sh 下载失败"
     exit 0
 fi
