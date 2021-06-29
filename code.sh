@@ -86,6 +86,7 @@ name_chinese=(
 gen_pt_pin_array() {
   local envs=$(eval echo "\$JD_COOKIE")
   local array=($(echo $envs | sed 's/&/ /g'))
+  user_sum="${#array[*]}"
   local tmp1 tmp2 i pt_pin_temp
   for i in "${!array[@]}"; do
     pt_pin_temp=$(echo ${array[i]} | perl -pe "{s|.*pt_pin=([^; ]+)(?=;?).*|\1|; s|%|\\\x|g}")
