@@ -22,10 +22,10 @@ fi
 chmod 755 $code_shell_path
 
 # 替换 code.sh 中的作者名_仓库名
-echo -n "输入你的作者名_仓库名，例如shufflewzc_faker2(默认为JDHelloWorld_jd_scripts):"
-read -r repoAuthor
-repoAuthor=${repoAuthor:-'JDHelloWorld_jd_scripts'}
-sed -i "s/chinnkarahoi_jd_scripts/$repoAuthor/g" $code_shell_path
+#echo -n "输入你的作者名_仓库名，例如shufflewzc_faker2(默认为JDHelloWorld_jd_scripts):"
+#read -r repoAuthor
+#repoAuthor=${repoAuthor:-'默认为JDHelloWorld_jd_scripts'}
+sed -i "s/chinnkarahoi_jd_scripts/shufflewzc_faker2/g" $code_shell_path
 
 # 将 code.sh 添加到定时任务
 if [ "$(grep -c code.sh /ql/config/crontab.list)" = 0 ]; then
