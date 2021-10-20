@@ -38,20 +38,20 @@ var_name=(
 )
 
 name_js=(
-  shufflewzc_faker2_jd_fruit
-  shufflewzc_faker2_jd_pet
-  shufflewzc_faker2_jd_plantBean
-  shufflewzc_faker2_jd_dreamFactory
-  shufflewzc_faker2_jd_jdfactory
-  shufflewzc_faker2_jd_jdzz
-  shufflewzc_faker2_jd_crazy_joy
-  shufflewzc_faker2_jd_jxnc
-  shufflewzc_faker2_jd_bookshop
-  shufflewzc_faker2_jd_cash
-  shufflewzc_faker2_jd_sgmh
-  shufflewzc_faker2_jd_cfd
-  shufflewzc_faker2_jd_health
-  shufflewzc_faker2_jd_city
+  chinnkarahoi_jd_scripts_jd_fruit
+  chinnkarahoi_jd_scripts_jd_pet
+  chinnkarahoi_jd_scripts_jd_plantBean
+  chinnkarahoi_jd_scripts_jd_dreamFactory
+  chinnkarahoi_jd_scripts_jd_jdfactory
+  chinnkarahoi_jd_scripts_jd_jdzz
+  chinnkarahoi_jd_scripts_jd_crazy_joy
+  chinnkarahoi_jd_scripts_jd_jxnc
+  chinnkarahoi_jd_scripts_jd_bookshop
+  chinnkarahoi_jd_scripts_jd_cash
+  chinnkarahoi_jd_scripts_jd_sgmh
+  chinnkarahoi_jd_scripts_jd_cfd
+  chinnkarahoi_jd_scripts_jd_health
+  chinnkarahoi_jd_scripts_jd_city
 )
 
 name_config=(
