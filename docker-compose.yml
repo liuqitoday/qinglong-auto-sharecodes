@@ -1,0 +1,26 @@
+version: '3'
+services:
+  qinglong:
+    image: whyour/qinglong:latest
+    volumes:
+      - /opt/qinglong/config:/ql/config
+      - /opt/qinglong/log:/ql/log
+      - /opt/qinglong/db:/ql/db
+      - /opt/qinglong/scripts:/ql/scripts
+      - /opt/qinglong/repo:/ql/repo
+      - /opt/qinglong/raw:/ql/raw
+    ports:
+      - 5700:5700
+    restart: always
+    hostname: qinglong
+  nolanjdc:
+    image: nolanhzy/nvjdc:latest
+    volumes:
+      - /opt/nolanjdc:/app
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 5701:80
+    restart: always
+    privileged: true
+    depends_on:
+      - qinglong
