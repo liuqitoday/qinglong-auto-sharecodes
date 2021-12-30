@@ -10,3 +10,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/liuqitoday/qinglong-auto
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/one-key.sh)"
 ```
+
+# qinglong + nolanjdc docker-compose
+https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/docker-compose.yml
